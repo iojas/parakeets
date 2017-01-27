@@ -70,5 +70,4 @@ unicodecsv==0.14.1
 Werkzeug==0.11.11
 xlrd==1.0.0
 XlsxWriter==0.9.3
-xlwings==0.10.0
 xlwt==1.1.2
