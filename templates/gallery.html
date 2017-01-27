@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html class="ie8 no-js"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="not-ie no-js">  <!--<![endif]-->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Kindergarten</title>
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<!-- Bootstrap core CSS -->
+		<link href="{{ url_for('static',filename='css/bootstrap.min.css') }}" type="text/css" rel="stylesheet" media="screen">
+
+		<link href="{{ url_for('static',filename='css/style.css') }}" type="text/css" rel="stylesheet" media="screen">
+		<link href="{{ url_for('static',filename='css/font-awesome.css') }}" type="text/css" rel="stylesheet" media="screen">
+
+		<script src="{{ url_for('static',filename='js/modernizr.js') }}"></script>
+		<script src="{{ url_for('static',filename='js/respond.js') }}"></script>
+	</head>
+	<body>
+		<div class="container" id="wrapper">
+
+			<!-- header -->
+			<header>
+				<a href="/" class="logo">
+					<img src="{{ url_for('static',filename='images/logo.png') }}" alt="" />
+				</a>
+				<nav role="navigation">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="fa">&#xf0c9;</span>
+						</button>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="/about">About us</a></li>
+							<li class="active"><a href="/gallery">Gallery</a></li>
+							<li><a href="/contact">Contact</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+					<div id="sun"></div>
+
+				</nav>
+				<div class="clearfix"></div>
+			</header>
+			<!-- end header -->
+
+			<!-- page content area -->
+			<section id="content" class="col-lg-7 col-md-8 col-sm-12">
+
+				<div class="cloud">
+					<h1>Gallery</h1>
+				</div>
+
+				<div class="content-bg">
+					<h2 class="green-title"><span class="fa"></span> Fancy Dress Competition</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<div class="gallery">
+						<a href="{{ url_for('static',filename='images/placeholders/image1.jpg') }}" rel="prettyphoto[gallery1]"><img src="{{ url_for('static',filename='images/placeholders/image1.jpg') }}" alt="" style="width: 125px;height: 90px" /></a>
+						<a href="{{ url_for('static',filename='images/placeholders/image2.jpg') }}" rel="prettyphoto[gallery1]"><img src="{{ url_for('static',filename='images/placeholders/image2.jpg') }}" alt="" style="width: 125px;height: 90px"/></a>
+						<a href="{{ url_for('static',filename='images/placeholders/image3.jpg') }}" rel="prettyphoto[gallery1]"><img src="{{ url_for('static',filename='images/placeholders/image3.jpg') }}" alt="" style="width: 125px;height: 90px"/></a>
+						<a href="{{ url_for('static',filename='images/placeholders/image4.jpg') }}" rel="prettyphoto[gallery1]"><img src="{{ url_for('static',filename='images/placeholders/image4.jpg') }}" alt="" style="width: 125px;height: 90px"/></a>
+						<a href="{{ url_for('static',filename='images/placeholders/image5.jpg') }}" rel="prettyphoto[gallery1]"><img src="{{ url_for('static',filename='images/placeholders/image5.jpg') }}" alt="" style="width: 125px;height: 90px"/></a>
+						<a href="{{ url_for('static',filename='images/placeholders/image7.jpg') }}" rel="prettyphoto[gallery1]"><img src="{{ url_for('static',filename='images/placeholders/image7.jpg') }}" alt="" style="width: 125px;height: 90px"/></a>
+						<a href="{{ url_for('static',filename='images/placeholders/image6.jpg') }}" rel="prettyphoto[gallery1]"><img src="{{ url_for('static',filename='images/placeholders/image6.jpg') }}" alt="" style="width: 125px;height: 90px"/></a>
+						<a href="{{ url_for('static',filename='images/placeholders/image10.jpg') }}" rel="prettyphoto[gallery1]"><img src="{{ url_for('static',filename='images/placeholders/image10.jpg') }}" alt="" style="width: 125px;height: 90px"/></a>
+						<div class="clearfix"></div>
+					</div>
+
+					<div class="separator"></div>
+
+					<h2 class="green-title"><span class="fa"></span> Second album name</h2>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<div class="gallery">
+						<a href="{{ url_for('static',filename='images/placeholders/image8.jpg') }}" rel="prettyphoto[gallery1]"><img src="{{ url_for('static',filename='images/placeholders/image8.jpg') }}" alt="" style="width: 125px;height: 90px"/></a>
+						<a href="{{ url_for('static',filename='images/placeholders/image9.jpg') }}" rel="prettyphoto[gallery1]"><img src="{{ url_for('static',filename='images/placeholders/image9.jpg') }}" alt="" style="width: 125px;height: 90px"/></a>
+						<a href="{{ url_for('static',filename='images/placeholders/image10.jpg') }}" rel="prettyphoto[gallery1]"><img src="{{ url_for('static',filename='images/placeholders/image10.jpg') }}" alt="" style="width: 125px;height: 90px"/></a>
+						<br>
+						<br>
+						<br><br>
+					</div>
+				</div>
+
+			</section>
+			<!-- end page content area -->
+
+			<div class="clearfix"></div>
+		</div>
+		<!-- end #wrapper -->
+
+		<footer>
+			<div class="footer-menu">
+				<div class="container">
+					<div class="col-lg-6 col-md-6 col-sm-12 fa social-media">
+						<a href="#">&#xf0d4;</a>
+						<a href="#">&#xf082;</a>
+						<a href="#">&#xf099;</a>
+						<a href="#">&#xf16d;</a>
+						<a href="#">&#xf08c;</a>
+						<a href="#">&#xf0d2;</a>
+						<a href="#">&#xf166;</a>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 footer-links">
+						<a href="/">Home</a> /
+						<a href="/about">About</a> /
+						<a href="/gallery">Gallery</a> /
+						<a href="/contact">Contact</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="col-lg-12 col-md-12">&copy; 2013 Kindergarten</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="{{ url_for('static',filename='js/jquery-1.10.1.min.js') }}"></script>
+		<script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+		<script src="{{ url_for('static',filename='js/custom.js') }}"></script>
+		<script src="{{ url_for('static',filename='js/jquery.prettyPhoto.js') }}"></script>
+
+
+	</body>
+</html>
