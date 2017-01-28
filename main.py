@@ -1,8 +1,11 @@
 from flask import Flask, render_template, request, jsonify, redirect
 from flask_mail import Mail, Message
 import re
+import os
+from werkzeug.contrib.fixers import ProxyFix
 
 app = Flask(__name__)
+
 
 
 
@@ -10,7 +13,7 @@ app.config['MAIL_SERVER'] = 'smtp.googlemail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'ojasok@gmail.com'
-app.config['MAIL_PASSWORD'] = ''
+app.config['MAIL_PASSWORD'] = '12ka4mynameisojas'
 app.config['DEFAULT_MAIL_SUBJECT'] = 'Tesst Email'
 app.config['DEFAULT_MAIL_SENDER'] = 'Admin <ojasok@gmail.com>'
 app.config['SECRET_KEY'] = 'akcjbakjsckjassn'
@@ -59,5 +62,8 @@ def contact():
     	print "In GET"
         return render_template ("contact.html")  
 
+app.wsgi_app = ProxyFix(app.wsgi_app)
+
 if __name__ == "__main__":
-    app.run(debug = True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
